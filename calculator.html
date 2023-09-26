@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="calculaor.css">
+</head>
+<body>
+  <div class="prnt-calc-bx">
+<div></div>
+  
+ <p class="calc-space"></p>   
+  <div class="top-row-values">
+  <button class="symbols"  onclick="updateCalcValue('1')">1</button>
+
+  <button class="symbols" onclick="updateCalcValue('2')">2
+  </button>
+
+  <button class="symbols" onclick="updateCalcValue('3')">3</button>
+
+  <button  class="symbols left" onclick="updateCalcValue('+')">+</button>
+
+
+
+</div>
+<div class="scnd-row-values">
+  <button class="symbols" onclick="updateCalcValue('4')">4</button>
+
+  <button class="symbols" onclick="updateCalcValue('5')">5</button>
+
+  <button class="symbols" onclick="updateCalcValue('6')">6</button>
+
+  <button class="symbols left" class="symbols" onclick=" updateCalcValue('-')">-</button>
+
+
+  
+</div>
+<div class="third-row-values">
+  <button class="symbols" onclick="updateCalcValue('7')">7</button>
+  
+  <button class="symbols" onclick="updateCalcValue('8')">8</button>
+
+  <button class="symbols" onclick="updateCalcValue('9')">9</button>
+
+
+  
+  
+  
+  
+  
+  
+  
+  <button class="symbols left" onclick="updateCalcValue('.')">.</button>
+</div>
+<div class="fourth-row-values">
+  <button class="symbols" onclick="updateCalcValue('0')">0</button>
+
+
+  <button class="symbols" onclick=" updateCalcValue('*')">x</button>
+  
+  <button class="symbols" onclick="updateCalcValue('/')">/</button>
+  
+  
+  
+  <button class="symbols left " onclick="eval(calculation); calculation = eval(calculation);
+ printValue();">=</button>
+  
+  </div>
+  <button onkeydown="enterBtnCalculation(event)" class="symbols clear" onclick="calculation = '';
+   printValue();">Clear</button>
+</div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
+
